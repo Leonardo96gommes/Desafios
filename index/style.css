@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* Define a imagem de fundo e ajusta seu tamanho */
+  background-image: url("/img/bg-desktop.svg");
+  background-color: hsl(257, 40%, 49%);
+  background-size: cover; /* Isso garante que a imagem cubra a tela inteira */
+  background-position: center; /* Isso centraliza a imagem horizontalmente */
+  background-attachment: fixed; /* Isso fixa a imagem de fundo, evitando que role com o conteúdo */
+  height: 100vh; /* Define a altura do corpo para ocupar a tela inteira */
+}
+
+p {
+  font-size: 22px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.conteiner-pai {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.illustration {
+  margin: 0 auto;
+}
+
+.text {
+  display: grid;
+  gap: 20px;
+  color: white;
+  width: 80%;
+  padding: 20px;
+}
+
+.text h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.logo {
+  display: grid;
+  align-items: flex-start;
+  padding: 45px;
+  margin-left: 70px;
+}
+
+.button {
+  text-decoration: none;
+  background-color: hsl(300, 69%, 71%);
+  border-radius: 3rem;
+  text-align: center;
+  width: 180px;
+  padding: 15px;
+  color: white;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cont-footer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 80%;
+  right: 100px;
+  gap: 35px;
+  cursor: pointer;
+}
+
+.hovericon:hover {
+  background-color: hsl(300, 69%, 61%); /* Define a nova cor no hover */
+  cursor: pointer; /* Altera o cursor ao passar o mouse sobre o elemento */
+  border-radius: 30%;
+}
+
+@media (max-width: 768px) {
+  .conteiner-pai {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 45px;
+    margin: 0 auto;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 35px;
+    cursor: pointer;
+    margin: 0 auto;
+    position: revert;
+    
+  }
+
+  .illustration {
+    padding: 30px;
+  }
+
+  .hovericon:hover {
+    background-color: hsl(300, 69%, 61%); /* Define a nova cor no hover */
+    cursor: pointer; /* Altera o cursor ao passar o mouse sobre o elemento */
+    border-radius: 50%;
+  }
+
+  .text {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    color: white;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  a,
+  h1 {
+    align-items: center;
+    text-align: center;
+  }
+
+  .button {
+    margin: 0 auto;
+  }
+
+  .cont-footer {
+    height: 200px;
+  }
+}
